@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -33,7 +34,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>BEST SALE</h4>
                     <h5>Laptops Max</h5>
-                    <p>From $1699.00 or <br /> $64.62/mo.</p>
+                    <p>
+                      From $1699.00 or <br /> $64.62/mo.
+                    </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative ">
@@ -45,7 +48,10 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>15% OFF</h4>
                     <h5>Smallwatch 7</h5>
-                    <p>Shop the latest band<br/> style and color.</p>
+                    <p>
+                      Shop the latest band
+                      <br /> style and color.
+                    </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative ">
@@ -57,7 +63,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>NEW ARRIVAL</h4>
                     <h5>Buy Ipad Air</h5>
-                    <p>From $599 or <br/> $49.91/mo for 12 mo. *</p>
+                    <p>
+                      From $599 or <br /> $49.91/mo for 12 mo. *
+                    </p>
                   </div>
                 </div>
                 <div className="small-banner position-relative ">
@@ -69,7 +77,9 @@ const Home = () => {
                   <div className="small-banner-content position-absolute">
                     <h4>FREE ENGRAVING</h4>
                     <h5>AirPods Max</h5>
-                    <p>High-fidelity playback & <br /> ultra-low distortion</p>
+                    <p>
+                      High-fidelity playback & <br /> ultra-low distortion
+                    </p>
                   </div>
                 </div>
               </div>
@@ -112,7 +122,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <img src="images/service-05.png" alt="services" />
-                  <div >
+                  <div>
                     <h6>Secure Payments</h6>
                     <p className="mb-0">100% protected payment</p>
                   </div>
@@ -183,12 +193,48 @@ const Home = () => {
                   </div>
                   <img src="images/homeapp.jpg" alt="camera"></img>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section className="marque-wrapper py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <div className="marquee-inner-wrapper card-wrapper">
+                <Marquee className="d-flex">
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-01.png" alt="" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-02.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-03.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-04.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-05.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-06.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-07.png" alt="brand" />
+                  </div>
+                  <div className="mx-4 w-24">
+                    <img src="images/brand-08.png" alt="brand" />
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </>
   );
 };
