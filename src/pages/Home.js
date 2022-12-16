@@ -1,6 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   return (
@@ -160,7 +162,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex gap-30 align-items-center justify-content-between">
                   <div>
-                    <h6>Smart Watches</h6>
+                    <h6>HeadPhones</h6>
                     <p>10 Items</p>
                   </div>
                   <img src="images/headphone.jpg" alt="camera"></img>
@@ -195,6 +197,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="feature-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Features Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
         </div>
       </section>
@@ -234,7 +249,20 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+      <section className="blog-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Latest Blogs</h3>
+            </div>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };
