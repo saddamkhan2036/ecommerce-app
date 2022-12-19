@@ -304,14 +304,40 @@ padding:10px 10px 10px 20px;
     border-radius: 10px;
     background-color: white;
   }
-
- 
   .badge {
     background-color:#ef3939;
     border-radius: 100%;
     margin: 3px;
   }
-
   .img-2 img {
     width: 200px;
   }
+
+   /* Famous Card */
+   .famous-card .famous-content{
+    top:10%;
+    left:10%;
+   }
+   .famous-card img{
+    border-radius: 10px ;
+   }
+   .famous-card h5{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color:white;
+    margin-bottom: 7px;
+    text-transform: uppercase ;
+   }
+   .famous-card h6{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+    color:white;
+   }
+   .famous-card p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 100;
+    color:white;
+   }
