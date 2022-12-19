@@ -37,6 +37,9 @@ a{
   text-decoration: none;
   display: inline-block;
 }
+.gap-5{
+  gap:5px;
+}
 .gap-10{
   gap:10px;
 }
@@ -293,4 +296,22 @@ padding:10px 10px 10px 20px;
   .wishlist-icon {
   top:2;
   right:15px;
+  }
+
+  /* Special Product */
+  .special-product-card{
+    padding:10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+ 
+  .badge {
+    background-color:#ef3939;
+    border-radius: 100%;
+    margin: 3px;
+  }
+
+  .img-2 img {
+    width: 200px;
   }
