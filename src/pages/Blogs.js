@@ -2,13 +2,13 @@ import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 
-const Contact = () => {
+const Blogs = () => {
   return (
     <>
-     <Meta title={"Contact"} />
-      <BreadCrumb title="Contact" />
+     <Meta title={"Our Blogs"} />
+      <BreadCrumb title="Our Blogs" />
     </>
   );
 };
 
-export default Contact;
+export default Blogs;
