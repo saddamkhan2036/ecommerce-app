@@ -397,3 +397,17 @@ padding:10px 10px 10px 20px;
 .random-products:first-child{
   border-bottom: 1px solid var(--color-ededed)
 }
+
+.filter-sort-grid{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.grid img{
+ width:30px;
+ height:30px;
+ background-color:#f2f2f2;
+ padding:8px;
+ border-radius: 3px;
+
+}
