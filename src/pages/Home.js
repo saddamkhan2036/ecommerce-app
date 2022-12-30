@@ -209,8 +209,6 @@ const Home = () => {
             </div>
             <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
           </div>
         </div>
       </section>
@@ -304,8 +302,6 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">Our Popular Products</h3>
             </div>
-            <ProductCard />
-            <ProductCard />
             <ProductCard />
             <ProductCard />
           </div>

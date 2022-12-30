@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
+import ProductCard from "../components/ProductCard";
 
 const OurStore = () => {
+  const [grid, setGrid] = useState(4);
   return (
     <>
       <Meta title={"Our Store"} />
@@ -216,31 +218,78 @@ const OurStore = () => {
               <div className="filter-sort-grid mb-4">
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="d-flex align-items-center gap-10">
-                    <p className="mb-0 d-block " style={{width:"100px"}}>Sort By:</p>
+                    <p className="mb-0 d-block " style={{ width: "100px" }}>
+                      Sort By:
+                    </p>
                     <select name="" className="form-control form-select" id="">
                       <option value="manual">Featured</option>
-                      <option value="best-selling" selected="selected">Best Selling</option>
-                      <option value="title-descending">Alphabetically, A-Z</option>
-                      <option value="title-ascending">Alphabetically, Z-A</option>
-                      <option value="price-ascending">Price, low to high</option>
-                      <option value="price-descending">Price, high to low</option>
-                      <option value="created-descending">Date, old to new</option>
+                      <option value="best-selling" selected="selected">
+                        Best Selling
+                      </option>
+                      <option value="title-descending">
+                        Alphabetically, A-Z
+                      </option>
+                      <option value="title-ascending">
+                        Alphabetically, Z-A
+                      </option>
+                      <option value="price-ascending">
+                        Price, low to high
+                      </option>
+                      <option value="price-descending">
+                        Price, high to low
+                      </option>
+                      <option value="created-descending">
+                        Date, old to new
+                      </option>
                     </select>
                   </div>
                   <div className="d-flex align-items-center agp-10 ">
                     <p className="totalProducts mb-0">21 Products</p>
                     <div className="d-flex gap-10 align-items-center grid">
-                      <img src="images/gr4.svg" className="d-block img-fluid" alt="grid" />
-                      <img src="images/gr3.svg" className="d-block img-fluid" alt="grid" />
-                      <img src="images/gr2.svg" className="d-block img-fluid" alt="grid" />
-                      <img src="images/gr.svg" className="d-block img-fluid" alt="grid" />
+                      <img
+                        onClick={() => {
+                          setGrid(3);
+                        }}
+                        src="images/gr4.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(4);
+                        }}
+                        src="images/gr3.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(6);
+                        }}
+                        src="images/gr2.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
+                      <img
+                        onClick={() => {
+                          setGrid(12);
+                        }}
+                        src="images/gr.svg"
+                        className="d-block img-fluid"
+                        alt="grid"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-            <div className="product-list pb-5"></div>
+              <div className="product-list pb-5">
+                <div className="d-flex gap-10 flex-wrap">
+                  <ProductCard grid={grid} />
+                  <ProductCard grid={grid} />
+                </div>
+              </div>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </>

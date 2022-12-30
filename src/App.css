@@ -257,6 +257,7 @@ padding:10px 10px 10px 20px;
     background-color: white;
     border-radius:10px;
     overflow: hidden;
+    width: 100%;
   }
   .product-card:hover .action-bar {
     right:15px;
@@ -288,6 +289,14 @@ padding:10px 10px 10px 20px;
     font-size:16px;
     color: var(--color-1c1c1b);
   }
+
+.product-card p.description{
+  font-size: 13px;
+  color: var(--color-777777);
+  margin-right: 30px;
+  text-align:justify;
+   
+}
   .action-bar{
     top:10%;
     right: -23px;
@@ -409,5 +418,36 @@ padding:10px 10px 10px 20px;
  background-color:#f2f2f2;
  padding:8px;
  border-radius: 3px;
+ cursor: pointer;
+}
 
+.gr-12{
+  width: 100%;
+}
+.gr-6{
+  width: 49.4%;
+}
+.gr-4{
+  width: 32%;
+}
+.gr-3{
+  width: 24%;
+}
+.gr-12 .product-card{
+  display:flex;
+  gap:20px;
+}
+.gr-6 .product-image{
+  width:100%;
+}
+.gr-6 .product-image{
+  margin:auto;
+  display: block;
+}
+.gr-12 .product-card .product-image{
+  width:270px;
+  height:auto;
+}
+.gr-12 .action-bar{
+  top:17%;
 }
